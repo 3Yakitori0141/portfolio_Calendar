@@ -1,0 +1,48 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    border-collapse: collapse;
+    /* [border-collapse]表(table)要素の境界線(ボーダー)の扱い方を定義 */
+    /* [collapse]隣接するセルの境界線が重なり合い、1つの境界線として表示 */
+    border:  2px solid #eee;
+}
+
+thead,tfoot {
+    background: #eee;
+}
+
+th,td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* 「td:first-child」は、各行の最初のセル（最初の列）を選択 */
+tbody td:first-child {
+    color: red;
+}
+
+tbody td:last-child {
+    color: blue;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+/* 先月と来月部分の色を薄く */
+td.disabled {
+    opacity: 0.3;
+}
+
+/* 今日の日付は色を濃く */
+td.today {
+    font-weight: bold;
+}
+
+#prev,#next,#today {
+    cursor: bold;
+    /* テキストを選択不可にする（コピーペーストの様な範囲指定無効化） */
+    user-select: none;
+}
