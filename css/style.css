@@ -21,10 +21,12 @@ th,td {
 /* 「td:first-child」は、各行の最初のセル（最初の列）を選択 */
 tbody td:first-child {
     color: red;
+    background: rgba(255, 0, 0, 0.3);
 }
 
 tbody td:last-child {
     color: blue;
+    background: rgba(0, 0, 255, 0.3);
 }
 
 tfoot {
